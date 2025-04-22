@@ -1,0 +1,306 @@
+body {
+    background-color: #072747;
+    font-family: Georgia, verdana;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .profile-card {
+    background-color: rgb(10, 41, 107);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+  }
+
+  .profile-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  .profile-card h1 {
+    font-size: 24px;
+    color: #eeeaea;
+    margin-bottom: 10px;
+  }
+
+  .profile-card p {
+    font-size: 14px;
+    color: #eeeaea;
+    margin: 8px 0;
+  }
+
+  .profile-card a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition:background-color 0.3s;
+  }
+
+  .profile-card a:hover {
+    background-color: #0056b3;
+  }
+
+  .profile-card a {
+    display: inline-block;
+    margin: 10px 5px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .profile-card {
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  .profile-card:hover {
+    transform: scale(1.03);
+    transition: transform 1.3s ease;
+  }
+
+  .skills-section {
+background-color: #0a2c56;
+padding: 30px;
+margin-top: 40px;
+border-radius: 15px;
+color: white;
+width: 300px;
+}
+.skills-section h2 {
+text-align: center;
+margin-bottom: 10px;
+}
+.skills-section p {
+text-align: center;
+font-size: 14px;
+margin-bottom: 20px;
+color: white;
+}
+
+.skill {
+margin-bottom: 15px;
+}
+
+.skill span {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+color: white;
+}
+
+.progress-bar {
+background-color: #1c3a60;
+border-radius: 10px;
+height: 15px;
+overflow: hidden;
+}
+
+.progress {
+height: 100%;
+background-color: #00bfff;
+border-radius: 10px;
+transition: width 0.5s ease;
+}
+
+body {
+background-color: #072747;
+font-family: Georgia, verdana;
+display: flex;
+justify-content: center;
+align-items: start;
+min-height: 100vh;
+margin: 0;
+padding: 30px 0;
+}
+
+.main-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 30px;
+}
+
+.progress {
+height: 100%;
+background-color: #00bfff;
+border-radius: 10px;
+width: 0;
+animation: fillBar 2s forwards;
+}
+
+@keyframes fillBar {
+to {
+  width: var(--bar-width); 
+}
+
+/* project-section */
+
+}
+ .projects-section {
+    background-color: #0a2c56;
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+    width: 300px;
+  }
+  
+  .projects-section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .projects-section p {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .project-card {
+    background-color: #123c5f;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .project-card h3 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    color: #d0d6df;
+  }
+  
+  .project-card p {
+    font-size: 13px;
+  }
+
+
+  /* CSS Variables for Theme Toggle */
+
+  .theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    z-index: 999;
+    transition: background-color 0.3s;
+  }
+  
+  .theme-toggle:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Light theme override */
+  body.light-mode {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  body.light-mode .profile-card,
+  body.light-mode .skills-section,
+  body.light-mode .projects-section {
+    background-color: #a39f9f;
+    color: #333;
+  }
+  body.light-mode .project-card {
+    background-color: #685959;
+  }
+  body.light-mode .profile-card a {
+    background-color: #333;
+  }
+  body.light-mode .profile-card a:hover {
+    background-color: #555;
+  }
+
+  body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  
+  .light-mode {
+    background-color: #f2f2f2;
+    color: #111;
+  }
+  
+  .light-mode .profile-card,
+  .light-mode .skills-section,
+  .light-mode .projects-section {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .light-mode .progress-bar {
+    background-color: #ddd;
+  }
+  
+  .light-mode .progress {
+    background-color: #007bff;
+  }
+  
+  .light-mode .theme-toggle {
+    background-color: #222;
+    color: white;
+  }
+
+  /* Theme toggle icon animation */
+.theme-toggle .icon {
+    display: inline-block;
+    transition: transform 0.5s ease;
+  }
+  
+  .light-mode .theme-toggle .icon {
+    transform: rotate(360deg) scale(1.2);
+  }
+
+  body,
+.profile-card,
+.skills-section,
+.projects-section {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+.theme-toggle {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .theme-toggle:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+
+
+  

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jeffrey's Profile Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <div class="main-container">
+
+  <div class="profile-card">
+    <img src="profile_img.jpg" alt="Profile Picture">
+
+    <h1>Tapia, Jeffry Rimpillo</h1>
+
+    <p>Future Web Developer. <br> I want to be a web developer. And now I'm studying on the front-end. <br> 
+      At the end of the day, I have the skills to be a programmer💻
+    </p>
+
+    <p>Bato, Catanduanes, Philippines</p>
+
+    <a href="https://www.linkedin.com/in/jeffry-tapia-280595340">LinkedIn</a>
+
+    <a href="https://www.instagram.com/jeffrey.jap.9/profilecard/?igsh=MXR2eDJ4d24zbDV4Yw%3D%3D">Instagram</a>
+
+    <a href="https://github.com/tap0319">Github</a>
+  </div>
+
+
+
+  <section class="skills-section">
+    <h2>💼 My skills</h2>
+    <p>I am currently learning front-end development and building strong foundations. </p>
+
+    <div class="skill">
+      <span>HTML</span>
+    <div class="progress-bar">
+      <div class="progress" style="width:80%"></div>
+    </div>
+    </div>
+
+
+    <div class="skill">
+      <span>CSS</span>
+      <div class="progress-bar">
+        <div class="progress" style="width: 70%"></div>
+      </div>
+    </div>
+
+
+
+    <div class="skill">
+      <span>JavaScript</span>
+      <div class="progress-bar">
+        <div class="progress" style="width: 40%"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="projects-section">
+    <h2>🛠 My Projects</h2>
+    <p>Here are some projects I'm working on or have completed:</p>
+  
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio site built using HTML & CSS to showcase my projects and skills.</p>
+    </div>
+  
+    <div class="project-card">
+      <h3>To-Do App (Coming Soon)</h3>
+      <p>A simple task manager using HTML, CSS, and JavaScript. Still in progress!</p>
+    </div>
+  </section>
+  
+
+  <button class="theme-toggle" onclick="toggletheme()">
+    <span id="theme-icon" class="icon">🌙</span> Theme</button>"
+
+  <script>
+    function toggletheme() {
+      document.body.classList.toggle('light-mode');
+      
+      const icon = document.getElementById('theme-icon');
+      const isLight = document.body.classList.contains('light-mode');
+
+      //animate icon switch
+
+      icon.style.transform = 'rotate(0deg) scale(1)';
+      icon.style.opacity = 0;
+
+      setTimeout(() => {
+        icon.textContent = isLight ? '🌞' : '🌙';
+        icon.style.opacity = 1;
+        icon.style.transform = 'rotate(360deg) scale(1.2)';
+      }, 200);
+    }
+  </script>
+
+  </div>
+  </body>
+
+
+
+   
