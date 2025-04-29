@@ -300,6 +300,49 @@ to {
     background-color: #0056b3;
     transform: scale(1.05);
   }
+
+@media (max-width: 768px) {
+  .main-container {
+    padding: 20px;
+    align-items: stretch;
+  }
+
+  .profile-card,
+  .skills-section,
+  .projects-section {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .theme-toggle {
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .project-card {
+    font-size: 14px;
+  }
+
+  .profile-card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-card h1 {
+    font-size: 20px;
+  }
+
+  .profile-card p,
+  .skills-section p,
+  .projects-section p {
+    font-size: 13px;
+  }
+}
+
+
   
 
 
