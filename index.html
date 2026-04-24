@@ -6,102 +6,140 @@
   <title>Jeffrey's Profile Card</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
- <div class="main-container">
+<div class="main-container">
 
+  <!-- PROFILE CARD -->
   <div class="profile-card">
     <img src="profile_img.jpg" alt="Profile Picture">
 
     <h1>Tapia, Jeffry Rimpillo</h1>
 
-    <p>Future Web Developer. <br> I want to be a web developer. And now I'm studying on the front-end. <br> 
-      At the end of the day, I have the skills to be a programmer💻
+    <p>
+      Front-end Web Developer in training with hands-on experience in HTML, CSS, and JavaScript. 
+      Passionate about creating clean, responsive, and user-friendly web interfaces. 
+      Previously worked in Bookkeeping and Data Entry, developing strong analytical skills and attention to detail.
     </p>
 
-    <p>Bato, Catanduanes, Philippines</p>
+    <p>📍 Bato, Catanduanes, Philippines</p>
 
-    <a href="https://www.linkedin.com/in/jeffry-tapia-280595340">LinkedIn</a>
+    <!-- PERSONAL INFO -->
+    <div class="personal-info">
+      <p><strong>🎂 Age:</strong> 31</p>
+      <p><strong>💼 Role:</strong> Aspiring Web Developer</p>
+      <p><strong>📧 Email:</strong>Jeffreytapia031@gmail.com</p>
+      <p><strong>📱 Phone:</strong> +639500529268</p>
+      <p><strong>🎯 Goal:</strong> Full-Time Remote Developer</p>
+    </div>
 
-    <a href="https://www.instagram.com/jeffrey.jap.9/profilecard/?igsh=MXR2eDJ4d24zbDV4Yw%3D%3D">Instagram</a>
-
-    <a href="https://github.com/tap0319">Github</a>
+    <!-- LINKS -->
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/jeffry-tapia-280595340">LinkedIn</a>
+      <a href="https://www.instagram.com/">Instagram</a>
+      <a href="https://github.com/tap0319">GitHub</a>
+    </div>
   </div>
 
-
-
+  <!-- SKILLS -->
   <section class="skills-section">
-    <h2>💼 My skills</h2>
-    <p>I am currently learning front-end development and building strong foundations. </p>
+    <h2>💼 My Skills</h2>
+    <p>Currently building strong front-end development foundations.</p>
 
     <div class="skill">
       <span>HTML</span>
-    <div class="progress-bar">
-      <div class="progress" style="width:80%"></div>
+      <div class="progress-bar">
+        <div class="progress" style="width:80%"></div>
+      </div>
     </div>
-    </div>
-
 
     <div class="skill">
       <span>CSS</span>
       <div class="progress-bar">
-        <div class="progress" style="width: 70%"></div>
+        <div class="progress" style="width:70%"></div>
       </div>
     </div>
-
-
 
     <div class="skill">
       <span>JavaScript</span>
       <div class="progress-bar">
-        <div class="progress" style="width: 40%"></div>
+        <div class="progress" style="width:40%"></div>
       </div>
     </div>
   </section>
 
+  <!-- PROJECTS -->
+ <section class="projects-section">
+  <h2>🛠 My Projects</h2>
+  <p>Here are some projects I've built:</p>
 
-  <section class="projects-section">
-    <h2>🛠 My Projects</h2>
-    <p>Here are some projects I'm working on or have completed:</p>
-  
-    <div class="project-card">
-      <h3>Portfolio Website</h3>
-      <p>A personal portfolio site built using HTML & CSS to showcase my projects and skills.</p>
+  <div class="project-card">
+    <h3>Portfolio Website</h3>
+    <p>Built using HTML & CSS to showcase my skills and projects.</p>
+
+    <div class="project-links">
+      <a href="https://tap0319.github.io/My-porfolio" target="_blank">🔗 Live Demo</a>
+      <a href="https://github.com/tap0319/My-porfolio" target="_blank">💻 Source Code</a>
     </div>
-  
-    <div class="project-card">
-      <h3>To-Do App (Coming Soon)</h3>
-      <p>A simple task manager using HTML, CSS, and JavaScript. Still in progress!</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Landing Page</h3>
+    <p>A task manager using HTML, CSS, and JavaScript.</p>
+
+    <div class="project-links">
+      <a href="https://tap0319.github.io/my-porfolio" target="_blank">🔗 Live Demo</a>
+      <a href="https://github.com/tap0319/Landing_page_admin" target="_blank">💻 Source Code</a>
+    </div>
+  </div>
+</section>
+
+  <!-- MORE ABOUT -->
+  <section class="extra-section">
+    <h2>✨ More About Me</h2>
+
+    <div class="extra-grid">
+      <div class="extra-card">
+        <h3>💡 Strengths</h3>
+        <p>Fast learner, hardworking, and goal-oriented.</p>
+      </div>
+
+      <div class="extra-card">
+        <h3>🔥 Interests</h3>
+        <p>Web Development, Gym, Gaming, and Tech.</p>
+      </div>
+
+      <div class="extra-card">
+        <h3>🚀 Dream</h3>
+        <p>Work remotely as a professional web developer.</p>
+      </div>
     </div>
   </section>
-  
 
-  <button class="theme-toggle" onclick="toggletheme()">
-    <span id="theme-icon" class="icon">🌙</span> Theme</button>"
+</div>
 
-  <script>
-    function toggletheme() {
-      document.body.classList.toggle('light-mode');
-      
-      const icon = document.getElementById('theme-icon');
-      const isLight = document.body.classList.contains('light-mode');
+<!-- THEME BUTTON -->
+<button class="theme-toggle" onclick="toggleTheme()">
+  <span id="theme-icon">🌙</span> Theme
+</button>
 
-      //animate icon switch
+<!-- SCRIPT -->
+<script>
+function toggleTheme() {
+  document.body.classList.toggle('light-mode');
 
-      icon.style.transform = 'rotate(0deg) scale(1)';
-      icon.style.opacity = 0;
+  const icon = document.getElementById('theme-icon');
+  const isLight = document.body.classList.contains('light-mode');
 
-      setTimeout(() => {
-        icon.textContent = isLight ? '🌞' : '🌙';
-        icon.style.opacity = 1;
-        icon.style.transform = 'rotate(360deg) scale(1.2)';
-      }, 200);
-    }
-  </script>
+  icon.style.opacity = 0;
 
-  </div>
-  </body>
+  setTimeout(() => {
+    icon.textContent = isLight ? '🌞' : '🌙';
+    icon.style.opacity = 1;
+  }, 200);
+}
+</script>
 
-
-
-   
+</body>
+</html>
